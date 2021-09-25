@@ -1,0 +1,7 @@
+persistence:
+  data:
+    enabled: true
+    mountPath: /var/syncthing
+    accessMode: ReadWriteOnce
+    storageClass: local-path
+    size: 10Gi
