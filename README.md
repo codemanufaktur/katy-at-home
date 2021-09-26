@@ -18,7 +18,7 @@ stuff on my k3s machine running at home
 * disable k3s servicelb (using metallb)
   * add `--disable servicelb` to /etc/systemd/system/k3s.service in section `ExecStart`
 * add local storage (e.g. hard drives)  
-  * `k edit cm local-path-config -n kube-system`, add local storage path(s) (FIXME: why is this overridden by k3s server start?)
+  * add `--default-local-storage-path /data/usb1` because k3s manages the cm local-path-config -n kube-system. dont edit cm by hand unless you deploy local-path-provisioner by self
 
 ## basic install
 
