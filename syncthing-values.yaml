@@ -1,3 +1,10 @@
+image:
+  tag: 1.18.2
+
+service:
+  listen:
+    type: LoadBalancer
+
 persistence:
   data:
     enabled: true
