@@ -12,3 +12,11 @@ persistence:
     accessMode: ReadWriteOnce
     storageClass: local-path
     size: 10Gi
+
+resources:
+  limits:
+    cpu: 250m
+    memory: 256Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
